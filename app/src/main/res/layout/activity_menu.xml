@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:scrollbars=""
+        android:layout_height="wrap_content"
+        android:elevation="44dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9f1a"
+            android:theme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageButton
+                android:id="@+id/backbutton2"
+                android:backgroundTint="#00000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Du Restaurant"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#eee"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lundi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dayname"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textStyle="bold"
+                        android:textSize="19sp"
+
+                        android:text="Dîner" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Thiebou Dieune bou weex" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:padding="3dip"
+                        android:text="Petit Poids" />
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynametwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Mardi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynametwo"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Thiebou Dieune bo xonk"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Vermisel"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynamethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mercredi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynamethree"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Mafé et Mbaxal"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Maccaroni"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynamefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jeudi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynamefour"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Soupou Kandia"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Ndambé"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynamefive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vendredi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynamefive"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Yassa Guinar"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Couscous ou Thiéré"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynamesix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Samedi"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynamesix"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Thiebou Yapp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Guinar Sauce"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:background="#ff7f1a"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/daynameseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dimanche"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daynameseven"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Repas"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Dîner"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:text="Thieb nu"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:text="Fondé"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                </TableRow>
+            </TableLayout>
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/repasname"-->
+            <!--            android:layout_width=""-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Repas"-->
+            <!--            android:textSize="17sp"-->
+            <!--            android:layout_below="@id/dayname"/>-->
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Diner"-->
+            <!--            android:layout_below="@id/dayname"-->
+            <!--            android:layout_toRightOf="@id/repasname"/>-->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

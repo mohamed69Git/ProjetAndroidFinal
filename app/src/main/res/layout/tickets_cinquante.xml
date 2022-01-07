@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_solid">
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_indicatorfifty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="#ff9f1a" />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/image_clue"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/breakfast_icon" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_ticketfifty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/image_clue"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nombre de tickets 50F"
+                    android:inputType="number"
+                    android:keyboardNavigationCluster="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/cancel_cinquante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_ticketfifty"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/raidus_corner"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/bungee"
+                android:src="@drawable/ic_baseline_cancel_24"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/submitted_cinquante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_ticketfifty"
+                android:layout_alignEnd="@id/edit_ticketfifty"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/raidus_corner"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/bungee"
+                android:src="@drawable/ic_baseline_add_shopping_cart_24"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <ImageButton
+                android:id="@+id/remove_ticket_cinquante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_ticketfifty"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/raidus_corner"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/bungee"
+                android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

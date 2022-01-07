@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RestUniv</string>
+
+    <string name="api_server">http://127.0.0.1/api</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="profile_name">Mohamed Ndoye</string>
+    <string name="profile_title">mohamed_ndoye</string>
+    <string name="my_balance">20</string>
+    <string name="my_payment">Compte</string>
+    <string name="tickets_repas">repas</string>
+    <string name="tickets_dej">petit dej</string>
+    <string name="hint_user_name">mohamed ndoye</string>
+    <string name="veuillez_pr_ciser_le_type_du_ticket_envoyer">Veuillez préciser le type du ticket à envoyer</string>
+    <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_about">About me!</string>
+    <string name="action_help">Guide App</string>
+    <string name="information">RestUniv est une application pour le restaurant universitaire, pour vous connecter, utiliser votre adresse mail universtaire et votre numéro dossier comme mot de passe</string>
+    <string name="action_menu">Voir le menu</string>
+    <string name="actualiser">Actualiser</string>
+</resources>
