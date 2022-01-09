@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_solid">
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:indicatorColor="#ff9f1a" />
+
+            <TextView
+                android:id="@+id/my_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_indicator"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:lineHeight="25dp"
+                android:text="@string/veuillez_pr_ciser_le_type_du_ticket_envoyer"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:id="@+id/ticket_radiogroup"
+                android:layout_width="140dp"
+                android:layout_height="114dp"
+                android:layout_below="@id/my_hint"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_ticket_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:checked="true"
+                    android:text="ticket de 100f" />
+
+                <RadioButton
+                    android:id="@+id/radio_ticket_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="ticket de 50f" />
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_number_account"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ticket_radiogroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numéro téléphone du destinataire"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_quantite"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_number_account"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre de tickets"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/cancel_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_quantite"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/raidus_corner"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/bungee"
+                android:src="@drawable/ic_baseline_cancel_24"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/submitted_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_quantite"
+                android:layout_alignEnd="@id/edit_quantite"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/raidus_corner"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/bungee"
+                android:onClick="acheter"
+                android:src="@drawable/ic_baseline_send_24"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

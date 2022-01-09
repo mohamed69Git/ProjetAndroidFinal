@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="44dp"
+        android:scrollbars="">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff7f1a"
+            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tool"
+        android:layout_height="365dp">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/fixedtop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/firstRel"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/borderfile"
+                    android:padding="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/myiamgeprofile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="false"
+                        android:src="@drawable/ic_baseline_photo_24" />
+
+                    <ImageView
+                        android:id="@+id/qrcodeGenerator"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/lasticonqrcode" />
+
+                    <TextView
+                        android:id="@+id/myName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/myiamgeprofile"
+                        android:layout_alignStart="@id/myiamgeprofile"
+                        android:layout_alignEnd="@id/myiamgeprofile"
+                        android:text="Mohamed"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#fff"
+                        app:cardElevation="50dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+
+                            <TextView
+                                android:id="@+id/payment_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/bungee"
+                                android:includeFontPadding="false"
+                                android:text="\????"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/payment_label"
+                                android:fontFamily="@font/bungee"
+                                android:includeFontPadding="false"
+                                android:text="F"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"
+                                android:translationY="3sp" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-45dp"
+                    android:paddingBottom="10dp">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#ff9f40"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/icone_show_lunch"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/lunch_icon" />
+
+                            <TextView
+                                android:id="@+id/lunch_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/icone_show_lunch"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/bungee"
+                                android:includeFontPadding="false"
+                                android:text="\??"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#ff9f40"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/icone_show_breakfast"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/breakfast_icon" />
+
+                            <TextView
+                                android:id="@+id/breakfast_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/icone_show_breakfast"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/bungee"
+                                android:includeFontPadding="false"
+                                android:text="\??"
+                                android:textColor="@color/white"
+                                android:textSize="17sp" />
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menutochoose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixedtop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/buycent"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/raidus_corner"
+                        android:backgroundTint="#ff7f1a"
+                        android:elevation="50dp"
+
+                        android:src="@drawable/ic_baseline_restaurant_25" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/buycent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-18dp"
+                        android:includeFontPadding="false"
+                        android:text="100F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/raidus_corner"
+                        android:backgroundTint="#ff7f1a"
+                        android:elevation="50dp"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_baseline_free_breakfast_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageButton2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-18dp"
+                        android:includeFontPadding="false"
+                        android:text="50F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/raidus_corner"
+                        android:backgroundTint="#ff7f1a"
+                        android:elevation="50dp"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_baseline_send_244" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageButton3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-18dp"
+                        android:includeFontPadding="false"
+                        android:text="envoyer"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/swiperefresh"
+        android:background="#f7f1e3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff">
+
+                <LinearLayout
+                    android:id="@+id/lineer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
